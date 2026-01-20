@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.app-header {
+  background-color: #2d2d30;
+  padding: 12px 20px;
+  border-bottom: 1px solid #3e3e42;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.command-button {
+  background-color: #0e639c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.command-button:hover {
+  background-color: #1177bb;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.browser-section {
+  width: 350px;
+  border-right: 1px solid #3e3e42;
+  display: flex;
+  flex-direction: column;
+  background-color: #252526;
+}
+
+.preview-section {
+  flex: 1;
+  overflow: auto;
+  background-color: #1e1e1e;
+}
+
+.command-panel-section {
+  height: 250px;
+  border-top: 1px solid #3e3e42;
+  background-color: #1e1e1e;
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}

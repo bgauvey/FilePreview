@@ -1,0 +1,17 @@
+.image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: calc(100vh - 200px);
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

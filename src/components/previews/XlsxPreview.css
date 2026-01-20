@@ -1,0 +1,62 @@
+.xlsx-preview {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sheet-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #3e3e42;
+  padding-bottom: 4px;
+}
+
+.sheet-tab {
+  background-color: #2d2d30;
+  border: none;
+  color: #d4d4d4;
+  padding: 8px 16px;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.15s;
+}
+
+.sheet-tab:hover {
+  background-color: #3e3e42;
+}
+
+.sheet-tab.active {
+  background-color: #0e639c;
+  color: #ffffff;
+}
+
+.sheet-container {
+  overflow: auto;
+  flex: 1;
+}
+
+.excel-table {
+  border-collapse: collapse;
+  width: auto;
+  min-width: 100%;
+}
+
+.excel-table td {
+  border: 1px solid #3e3e42;
+  padding: 8px 12px;
+  white-space: nowrap;
+  background-color: #2d2d30;
+  font-size: 13px;
+}
+
+.excel-table tr:first-child td {
+  background-color: #094771;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.excel-table td:empty::after {
+  content: '\00a0';
+}
